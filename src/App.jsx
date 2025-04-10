@@ -4,7 +4,7 @@ import Favourites from "./components/Favourites";
 import Movies from "./components/Movies";
 import Navbar from "./components/Navbar";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 
 function App({ movieObj }) {
   const [watchList, setWatchList] = useState([]);
@@ -36,7 +36,7 @@ function App({ movieObj }) {
 
   return (
     <>
-      <BrowserRouter>
+      
         <Navbar />
         <Routes>
           <Route
@@ -65,7 +65,6 @@ function App({ movieObj }) {
             }
           />
         </Routes>
-      </BrowserRouter>
     </>
   );
 }
